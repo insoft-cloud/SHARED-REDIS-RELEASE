@@ -1,0 +1,35 @@
+# RELEASE
+routing_version: latest
+bpm_version: latest
+syslog_version: latest
+
+# STEMCELL
+stemcell_os: "ubuntu-xenial"
+stemcell_version: "315.64"
+
+# VM_TYPE
+default_vm_type: "small"
+default_persistent_disk_type: "5GB"
+
+# NETWORK
+default_az: "z3"
+default_network: "default"
+
+# BROKER
+service_name: "shared-redis-service"                                              # default : p-redis
+service_id: "FFD3550F-6FA8-48F5-8942-E11459AA0981"                      # default: EEA47C3A-569C-4C24-869D-0ADB5B337A4C
+shared_vm_plan_id: "6EA1AAD8-6AE7-42CC-A2F8-73BCE2A7C3ED"       # default: C210CA06-E7E5-4F5D-A5AA-7A2C51CC290E
+broker_username: "admin"                                                           # default: admin
+broker_password: "admin"                                                            # default: admin
+broker_name: "redis"                                                                   # default: redis
+
+# SYSLOG 
+syslog_endpoint_host: "xxx.xxx.xxx.xxx"
+syslog_endpoint_port: 514                                  # default: 514
+
+# CF
+cf_deployment_name: "paasta"
+cf_username: "admin"
+cf_password: "admin"
+system_domain: "xxx.xxx.xxx.xxx.xip.io"                    # system_domain는 CF system_domain
+apps_domain: "xxx.xxx.xxx.xxx.xip.io"                       # apps_domain는CF apps 
